@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>color change</title>
+  </head>
+  <body>
+    <input type="button" value="Change color" id="btn" />
+    <input type="button" value="Prompt" id="pr" />
+
+    <script>
+      //Hna selectionina Boutona
+      var btn = document.getElementById("btn");
+      var pr = document.getElementById("pr");
+
+      //Nkhliw navigateur ysm3 l'action li andiro 3la chi composent
+      // element.addEventListener("evenement",fonction li bghitiha tra)
+      btn.addEventListener("click", () => {
+        document.body.style.backgroundColor = "green";
+      });
+
+      //Evenement ila dwzt souris fo9 mn dik Element :
+      btn.addEventListener("mouseover", () => {
+        document.body.style.backgroundColor = "red";
+      });
+
+      //Evenement ila 7ydni souris 3la dik Element :
+      btn.addEventListener("mouseout", () => {
+        document.body.style.backgroundColor = "white";
+      });
+    </script>
+  </body>
+</html>
